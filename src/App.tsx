@@ -7,6 +7,15 @@ const [input, setInput] = useState<any>("")
 
 
 function add(){
+if(input.trim() === ""){
+    alert("Digite Uma Tarefa")
+    return
+}
+
+
+
+    settarefas([...tasks, input])
+setInput("")
 
 }
 
