@@ -29,6 +29,8 @@ export default function App() {
                 {tasks.map((task: any) => (
                     <li key={task}>
                         {task}
+                        <label htmlFor="li"></label>
+                        <input type="checkbox" />
                     </li>
                 ))}
 
